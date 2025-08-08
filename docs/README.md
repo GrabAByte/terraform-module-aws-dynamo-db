@@ -20,15 +20,21 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_dynamodb_table.dynamodb_tables](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table) | resource |
+| [aws_dynamodb_table.dynamodb_table](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_attributes"></a> [attributes](#input\_attributes) | List of DynamoDB table attributes | <pre>list(object({<br/>    name = string<br/>    type = string<br/>  }))</pre> | n/a | yes |
+| <a name="input_billing_mode"></a> [billing\_mode](#input\_billing\_mode) | n/a | `string` | n/a | yes |
 | <a name="input_global_secondary_index"></a> [global\_secondary\_index](#input\_global\_secondary\_index) | Secondary index attributes | <pre>list(object({<br/>    name = string<br/>    type = string<br/>  }))</pre> | n/a | yes |
+| <a name="input_hash_key"></a> [hash\_key](#input\_hash\_key) | n/a | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | n/a | `string` | n/a | yes |
+| <a name="input_range_key"></a> [range\_key](#input\_range\_key) | n/a | `string` | n/a | yes |
+| <a name="input_read_capacity"></a> [read\_capacity](#input\_read\_capacity) | n/a | `string` | n/a | yes |
 | <a name="input_ttl"></a> [ttl](#input\_ttl) | TTL attributes | <pre>list(object({<br/>    name = string<br/>    type = string<br/>  }))</pre> | n/a | yes |
+| <a name="input_write_capacity"></a> [write\_capacity](#input\_write\_capacity) | n/a | `string` | n/a | yes |
 
 ## Outputs
 

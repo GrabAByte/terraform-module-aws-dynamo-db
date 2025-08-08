@@ -1,4 +1,4 @@
-resource "aws_dynamodb_table" "dynamodb_tables" {
+resource "aws_dynamodb_table" "dynamodb_table" {
   name           = var.name
   billing_mode   = var.billing_mode   # "PROVISIONED"
   read_capacity  = var.read_capacity  # 20
