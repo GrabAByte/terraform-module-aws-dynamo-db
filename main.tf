@@ -6,7 +6,13 @@ resource "aws_dynamodb_table" "dynamodb_table" {
   hash_key       = var.hash_key       # "UserId"
   range_key      = var.range_key      # "GameTitle"
 
-  attribute = var.attributes
+  dynamic "attribute" {
+    for_each = var.attributes
+    content {
+      name = attribute.value.name
+      type = attribute.value.type
+    }
+  }
 
   dynamic "ttl" {
     for_each = var.ttl
