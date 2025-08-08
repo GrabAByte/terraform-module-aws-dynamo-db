@@ -12,5 +12,11 @@ resource "aws_dynamodb_table" "dynamodb_table" {
     }
   }
 
+  lifecycle {
+    ignore_changes = [
+      attribute
+    ]
+  }
+
   tags = var.tags
 }
