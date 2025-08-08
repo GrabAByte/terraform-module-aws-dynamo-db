@@ -7,7 +7,10 @@ resource "aws_dynamodb_table" "dynamodb_table" {
   range_key      = var.range_key      # "GameTitle"
 
   attribute              = var.attributes
-  ttl                    = var.ttl
   global_secondary_index = var.global_secondary_index
-  tags                   = var.tags
+  ttl {
+    attribute_name = var.ttl.attribute_name
+    enabled        = var.ttl.enabled
+  }
+  tags = var.tags
 }

@@ -32,8 +32,8 @@ variable "attributes" {
 
 variable "ttl" {
   type = list(object({
-    name = string
-    type = string
+    attribute_name = string
+    enabled        = bool
   }))
   description = "TTL attributes"
 }
