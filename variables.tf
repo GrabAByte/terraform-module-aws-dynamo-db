@@ -45,3 +45,7 @@ variable "global_secondary_index" {
   }))
   description = "Secondary index attributes"
 }
+
+variable "tags" {
+  type = map(any)
+}
