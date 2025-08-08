@@ -35,7 +35,6 @@ No modules.
 | <a name="input_read_capacity"></a> [read\_capacity](#input\_read\_capacity) | n/a | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | n/a | `map(any)` | n/a | yes |
 | <a name="input_ttl"></a> [ttl](#input\_ttl) | TTL attributes | <pre>list(object({<br/>    attribute_name = string<br/>    enabled        = bool<br/>  }))</pre> | n/a | yes |
-| <a name="input_write_capacity"></a> [write\_capacity](#input\_write\_capacity) | n/a | `string` | n/a | yes |
 
 ## Outputs
 
