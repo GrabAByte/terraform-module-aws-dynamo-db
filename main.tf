@@ -6,9 +6,12 @@ resource "aws_dynamodb_table" "dynamodb_table" {
   hash_key       = var.hash_key       # "UserId"
   range_key      = var.range_key      # "GameTitle"
 
-  ttl {
-    attribute_name = var.ttl.attribute_name
-    enabled        = var.ttl.enabled
+  dynamic "ttl" {
+    for_each = var.ttl
+    content {
+      attribute_name = var.ttl.attribute_name
+      enabled        = var.ttl.enabled
+    }
   }
 
   dynamic "global_secondary_index" {
