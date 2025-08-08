@@ -1,10 +1,10 @@
 resource "aws_dynamodb_table" "dynamodb_table" {
   name           = var.name
-  billing_mode   = var.billing_mode   # "PROVISIONED"
-  read_capacity  = var.read_capacity  # 20
-  write_capacity = var.write_capacity # 20
-  hash_key       = var.hash_key       # "UserId"
-  range_key      = var.range_key      # "GameTitle"
+  billing_mode   = var.billing_mode
+  read_capacity  = var.read_capacity
+  write_capacity = var.write_capacity
+  hash_key       = var.hash_key
+  range_key      = var.range_key
 
   dynamic "attribute" {
     for_each = var.attributes
@@ -31,7 +31,7 @@ resource "aws_dynamodb_table" "dynamodb_table" {
       projection_type    = global_secondary_index.value.projection_type
       non_key_attributes = lookup(global_secondary_index.value, "non_key_attributes", null)
       read_capacity      = lookup(global_secondary_index.value, "read_capacity", null)
-      write_capacity     = lookup(global_secondary_index.value, "write_capacity", null)
+      #write_capacity     = lookup(global_secondary_index.value, "write_capacity", null)
     }
   }
 
