@@ -6,13 +6,13 @@ variable "billing_mode" {
   type = string
 }
 
-#variable "read_capacity" {
-#  type = string
-#}
+# variable "read_capacity" {
+#   type = string
+# }
 
-#variable "write_capacity" {
-#  type = string
-#}
+# variable "write_capacity" {
+#   type = string
+# }
 
 variable "hash_key" {
   type = string

@@ -1,8 +1,8 @@
 resource "aws_dynamodb_table" "dynamodb_table" {
   name         = var.name
   billing_mode = var.billing_mode
-  #read_capacity = var.read_capacity
-  #write_capacity = var.write_capacity
+  # read_capacity = var.read_capacity
+  # write_capacity = var.write_capacity
   hash_key  = var.hash_key
   range_key = var.range_key
 
@@ -30,8 +30,8 @@ resource "aws_dynamodb_table" "dynamodb_table" {
       range_key          = lookup(global_secondary_index.value, "range_key", null)
       projection_type    = global_secondary_index.value.projection_type
       non_key_attributes = lookup(global_secondary_index.value, "non_key_attributes", null)
-      #read_capacity      = lookup(global_secondary_index.value, "read_capacity", null)
-      #write_capacity     = lookup(global_secondary_index.value, "write_capacity", null)
+      read_capacity      = lookup(global_secondary_index.value, "read_capacity", null)
+      write_capacity     = lookup(global_secondary_index.value, "write_capacity", null)
     }
   }
 
