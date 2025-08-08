@@ -6,9 +6,9 @@ variable "billing_mode" {
   type = string
 }
 
-variable "read_capacity" {
-  type = string
-}
+#variable "read_capacity" {
+#  type = string
+#}
 
 #variable "write_capacity" {
 #  type = string
@@ -45,8 +45,8 @@ variable "gsi" {
     range_key          = optional(string)
     projection_type    = string
     non_key_attributes = optional(list(string))
-    read_capacity      = optional(number)
-    write_capacity     = optional(number)
+    #read_capacity      = optional(number)
+    write_capacity = optional(number)
   }))
   description = "List of global secondary indexes for the DynamoDB table"
 }
