@@ -30,7 +30,6 @@ No modules.
 | <a name="input_billing_mode"></a> [billing\_mode](#input\_billing\_mode) | n/a | `string` | n/a | yes |
 | <a name="input_hash_key"></a> [hash\_key](#input\_hash\_key) | n/a | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | n/a | `string` | n/a | yes |
-| <a name="input_range_key"></a> [range\_key](#input\_range\_key) | n/a | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | n/a | `map(any)` | n/a | yes |
 
 ## Outputs
