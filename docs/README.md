@@ -27,11 +27,11 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_attributes"></a> [attributes](#input\_attributes) | List of DynamoDB table attributes | <pre>list(object({<br/>    name = string<br/>    type = string<br/>  }))</pre> | n/a | yes |
-| <a name="input_billing_mode"></a> [billing\_mode](#input\_billing\_mode) | n/a | `string` | n/a | yes |
-| <a name="input_hash_key"></a> [hash\_key](#input\_hash\_key) | n/a | `string` | n/a | yes |
-| <a name="input_name"></a> [name](#input\_name) | n/a | `string` | n/a | yes |
-| <a name="input_range_key"></a> [range\_key](#input\_range\_key) | n/a | `string` | n/a | yes |
-| <a name="input_tags"></a> [tags](#input\_tags) | n/a | `map(any)` | n/a | yes |
+| <a name="input_billing_mode"></a> [billing\_mode](#input\_billing\_mode) | The billing mode for the database table | `string` | n/a | yes |
+| <a name="input_hash_key"></a> [hash\_key](#input\_hash\_key) | The Dynamo DB table primary key | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | The name of the Dynamo DB table | `string` | n/a | yes |
+| <a name="input_range_key"></a> [range\_key](#input\_range\_key) | The Dynamo DB table sort key | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | The project tags | `map(any)` | n/a | yes |
 
 ## Outputs
 
