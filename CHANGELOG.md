@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/GrabAByte/terraform-module-aws-dynamo-db/compare/v1.1.0...v1.1.1) (2025-08-15)
+
+
+### Bug Fixes
+
+* descriptions ([#3](https://github.com/GrabAByte/terraform-module-aws-dynamo-db/issues/3)) ([40c45dd](https://github.com/GrabAByte/terraform-module-aws-dynamo-db/commit/40c45dd59613b90b7e5a2df18a779ec773e24dc5))
+
 # [1.1.0](https://github.com/GrabAByte/terraform-module-aws-dynamo-db/compare/v1.0.0...v1.1.0) (2025-08-09)
 
 
