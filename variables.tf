@@ -1,17 +1,21 @@
 variable "name" {
-  type = string
+  type        = string
+  description = "The name of the Dynamo DB table"
 }
 
 variable "billing_mode" {
-  type = string
+  type        = string
+  description = "The billing mode for the database table"
 }
 
 variable "hash_key" {
-  type = string
+  type        = string
+  description = "The Dynamo DB table primary key"
 }
 
 variable "range_key" {
-  type = string
+  type        = string
+  description = "The Dynamo DB table sort key"
 }
 
 variable "attributes" {
@@ -23,5 +27,6 @@ variable "attributes" {
 }
 
 variable "tags" {
-  type = map(any)
+  type        = map(any)
+  description = "The project tags"
 }
